@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="CodeEditor.css" rel="stylesheet" />
+        <script src="CodeEditor.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/1749d1b496.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <div class="html">
+                    <label
+                        ><i
+                            class="fa-brands fa-html5"
+                            style="color: orange"
+                        ></i>
+                        Html</label
+                    >
+                    <div id="line-num-html" class="line"></div>
+                    <textarea onkeyup="execute()" id="html-code"></textarea>
+                </div>
+                <div class="css">
+                    <label
+                        ><i
+                            class="fa-brands fa-css3-alt"
+                            style="color: rgb(23, 77, 204)"
+                        ></i>
+                        Css</label
+                    >
+                    <div id="line-num-css" class="line"></div>
+                    <textarea onkeyup="execute()" id="css-code"></textarea>
+                </div>
+                <div class="js">
+                    <label
+                        ><i class="fa-brands fa-js" style="color: yellow"></i>
+                        Java Script</label
+                    >
+                    <div id="line-num-js" class="line"></div>
+                    <textarea onkeyup="execute()" id="js-code"></textarea>
+                </div>
+            </div>
+
+            <div class="right">
+                <label
+                    ><i
+                        class="fa-solid fa-play"
+                        style="color: rgb(49, 178, 49)"
+                    ></i>
+                    Output</label
+                >
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
